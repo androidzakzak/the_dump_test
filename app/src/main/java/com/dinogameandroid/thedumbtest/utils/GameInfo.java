@@ -2,8 +2,8 @@ package com.dinogameandroid.thedumbtest.utils;
 
 
 public class GameInfo {
-    private int mLevel;
-    private int mStrikes;
+    private int mLevel=1;
+    private int mStrikes=0;
 
     public int getLevel() {
         return mLevel;

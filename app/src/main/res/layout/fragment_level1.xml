@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dinogameandroid.thedumbtest.levels.FragmentLevel1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tvLevel"
+        android:layout_marginTop="24dp"
+        android:textColor="#050000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strikes:"
+        android:id="@+id/tvStrikes"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:textColor="#050000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Click Me"
+        android:id="@+id/mTvGoodClick"
+        android:layout_below="@+id/tvLevel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:textColor="#2715ed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="But Not Me"
+        android:id="@+id/mTvBadClick"
+        android:layout_above="@+id/tvStrikes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:textColor="#f40808" />
+</RelativeLayout>
