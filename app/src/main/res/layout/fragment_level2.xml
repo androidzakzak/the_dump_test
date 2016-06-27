@@ -10,13 +10,12 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:id="@+id/tvLevel"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="14dp"
         android:textColor="#050000"
+        android:textSize="16sp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="24dp"
-        android:textSize="16sp" />
+        android:layout_alignLeft="@+id/tvStrikes"
+        android:layout_alignStart="@+id/tvStrikes" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,6 +28,58 @@
         android:layout_marginBottom="24dp"
         android:layout_marginLeft="24dp"
         android:textColor="#050000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What happens if \n you dont eat?!?"
+        android:id="@+id/textView"
+        android:textSize="34sp"
+        android:layout_below="@+id/tvLevel"
+        android:layout_alignLeft="@+id/tvLevel"
+        android:layout_alignStart="@+id/tvLevel" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="You \n starve"
+        android:id="@+id/buttonTrue"
+        android:background="@drawable/sqery"
+        android:layout_above="@+id/tvStrikes"
+        android:layout_toRightOf="@+id/tvLevel"
+        android:layout_toEndOf="@+id/tvLevel" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="A bunny \n dies"
+        android:id="@+id/buttonFalse2"
+        android:background="@drawable/sqery"
+        android:layout_alignBottom="@+id/tvStrikes"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="The \n Rapture"
+        android:id="@+id/buttonFalse3"
+        android:background="@drawable/sqery"
+        android:layout_alignBottom="@+id/tvStrikes"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Don&apos;t \n WHAA?!?"
+        android:id="@+id/buttonFalse4"
+        android:background="@drawable/sqery"
+        android:layout_alignTop="@+id/tvLevel"
+        android:layout_alignLeft="@+id/buttonFalse3"
+        android:layout_alignStart="@+id/buttonFalse3" />
 
 
 </RelativeLayout>

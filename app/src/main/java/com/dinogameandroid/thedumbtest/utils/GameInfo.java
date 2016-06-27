@@ -2,7 +2,7 @@ package com.dinogameandroid.thedumbtest.utils;
 
 
 public class GameInfo {
-    private int mLevel=1;
+    private int mLevel;
     private int mStrikes=0;
 
     public int getLevel() {
