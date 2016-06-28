@@ -22,56 +22,66 @@
         android:text="Strikes:"
         android:id="@+id/tvStrikes"
         android:textColor="#050000"
+        android:layout_marginBottom="24dp"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/tvLevel"
-        android:layout_alignStart="@+id/tvLevel"
-        android:layout_marginBottom="23dp" />
+        android:layout_alignStart="@+id/tvLevel" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Hey buddy:3"
-        android:id="@+id/textView6"
-        android:layout_below="@+id/tvLevel"
-        android:layout_centerHorizontal="true"
+        android:text="How many times did you have \n to press the pink square\n in that last combination?"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/tvLevel"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/buttonFalse4"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvLevel"
+        android:layout_toEndOf="@+id/tvLevel"
+        android:background="@drawable/squre_red"
         android:textSize="30sp" />
 
     <Button
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bite me."
-        android:id="@+id/buttonFalse4"
-        android:layout_below="@+id/textView6"
-        android:layout_toRightOf="@+id/tvStrikes"
-        android:layout_toEndOf="@+id/tvStrikes" />
-
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Hello."
+        android:text="1"
         android:id="@+id/buttonFalse5"
-        android:layout_below="@+id/buttonFalse4"
+        android:background="@drawable/squre_korichneviu"
+        android:layout_above="@+id/tvStrikes"
         android:layout_toRightOf="@+id/buttonFalse4"
         android:layout_toEndOf="@+id/buttonFalse4"
-        android:layout_marginLeft="58dp"
-        android:layout_marginStart="58dp" />
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:textSize="30sp" />
 
     <Button
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lemons!!!"
+        android:text="2"
         android:id="@+id/buttonFalse2"
-        android:layout_below="@+id/buttonFalse5"
-        android:layout_toLeftOf="@+id/buttonFalse5"
-        android:layout_toStartOf="@+id/buttonFalse5" />
+        android:background="@drawable/squre_green"
+        android:layout_alignTop="@+id/buttonFalse4"
+        android:layout_toRightOf="@+id/buttonFalse5"
+        android:layout_toEndOf="@+id/buttonFalse5"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:textSize="30sp" />
 
     <Button
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Onion?"
+        android:text="24"
         android:id="@+id/buttonFalse3"
+        android:background="@drawable/squre_blue"
         android:layout_below="@+id/buttonFalse2"
-        android:layout_alignLeft="@+id/buttonFalse5"
-        android:layout_alignStart="@+id/buttonFalse5" />
+        android:layout_toRightOf="@+id/buttonFalse2"
+        android:layout_toEndOf="@+id/buttonFalse2"
+        android:textSize="30sp" />
+
 </RelativeLayout>

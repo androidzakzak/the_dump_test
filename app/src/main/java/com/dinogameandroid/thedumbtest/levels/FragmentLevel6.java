@@ -5,14 +5,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.dinogameandroid.thedumbtest.R;
 import com.dinogameandroid.thedumbtest.activity.GameActivity;
-import com.dinogameandroid.thedumbtest.utils.MyAnimation;
 
 public class FragmentLevel6 extends Fragment implements View.OnClickListener{
     private TextView tvLevel;
@@ -25,7 +22,7 @@ public class FragmentLevel6 extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View mRootView = inflater.inflate(R.layout.fragment_level6, container, false);
-        buttonTrue = (Button)mRootView.findViewById(R.id.buttonTrue);
+        buttonTrue = (Button)mRootView.findViewById(R.id.buttonFalse5);
         buttonFalse2 = (Button)mRootView.findViewById(R.id.buttonFalse2);
         buttonFalse3 = (Button)mRootView.findViewById(R.id.buttonFalse3);
         buttonFalse4 = (Button)mRootView.findViewById(R.id.buttonFalse4);
@@ -43,7 +40,7 @@ public class FragmentLevel6 extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.buttonTrue:
+            case R.id.buttonFalse5:
                 ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel7()).commit();
                 break;

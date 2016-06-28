@@ -43,7 +43,7 @@ public class FragmentLevel5_1 extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View mRootView = inflater.inflate(R.layout.fragment_level5_1, container, false);
-        buttonTrue = (Button)mRootView.findViewById(R.id.buttonTrue);
+        buttonTrue = (Button)mRootView.findViewById(R.id.buttonFalse5);
 
         buttonTrue.setOnClickListener(this);
         button = (Button)mRootView.findViewById(R.id.button);
@@ -93,7 +93,7 @@ public class FragmentLevel5_1 extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.buttonTrue:
+            case R.id.buttonFalse5:
                 if(one&&two&&three&&who) {
                     ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment, new FragmentLevel6()).commit();

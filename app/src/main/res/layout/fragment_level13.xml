@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tvLevel"
+        android:layout_marginTop="15dp"
+        android:textColor="#050000"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strikes:"
+        android:id="@+id/tvStrikes"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:textColor="#050000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What letter c"
+        android:id="@+id/textView13"
+        android:textSize="24sp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_alignTop="@+id/tvLevel"
+        android:layout_toRightOf="@+id/tvStrikes"
+        android:layout_toEndOf="@+id/tvStrikes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="o"
+        android:id="@+id/buttonTrue1"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="mes bef"
+        android:id="@+id/textView15"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/buttonTrue1"
+        android:layout_toRightOf="@+id/buttonTrue1"
+        android:layout_toEndOf="@+id/buttonTrue1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="o"
+        android:id="@+id/buttonFalse4"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="re P?"
+        android:id="@+id/textView17"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/buttonFalse4"
+        android:layout_toRightOf="@+id/buttonFalse4"
+        android:layout_toEndOf="@+id/buttonFalse4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="3"
+        android:id="@+id/buttonFalse6"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvLevel"
+        android:layout_toEndOf="@+id/tvLevel"
+        android:textSize="85sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="C"
+        android:id="@+id/buttonFalse5"
+        android:textSize="85sp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="G"
+        android:id="@+id/buttonTrue"
+        android:textSize="85sp"
+        android:layout_below="@+id/buttonFalse6"
+        android:layout_alignLeft="@+id/buttonFalse5"
+        android:layout_alignStart="@+id/buttonFalse5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="W"
+        android:id="@+id/buttonFalse3"
+        android:textSize="85sp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/buttonFalse4"
+        android:layout_toStartOf="@+id/buttonFalse4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="D"
+        android:id="@+id/buttonFalse1"
+        android:textSize="85sp"
+        android:layout_alignTop="@+id/buttonFalse3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="B"
+        android:id="@+id/buttonFalse2"
+        android:textSize="85sp"
+        android:layout_alignBottom="@+id/tvStrikes"
+        android:layout_alignRight="@+id/textView17"
+        android:layout_alignEnd="@+id/textView17" />
+
+
+</RelativeLayout>

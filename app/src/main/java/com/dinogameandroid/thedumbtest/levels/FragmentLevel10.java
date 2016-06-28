@@ -1,5 +1,6 @@
 package com.dinogameandroid.thedumbtest.levels;
 
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,28 +12,31 @@ import android.widget.TextView;
 import com.dinogameandroid.thedumbtest.R;
 import com.dinogameandroid.thedumbtest.activity.GameActivity;
 
-
-public class FragmentLevel2 extends Fragment implements View.OnClickListener{
-    private TextView tvLevel;
+public class FragmentLevel10 extends Fragment implements View.OnClickListener{
     private TextView tvStrikes;
     private Button buttonTrue;
     private Button buttonFalse2;
     private Button buttonFalse3;
     private Button buttonFalse4;
+    private Button buttonFalse5;
+    private Button buttonFalse6;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View mRootView = inflater.inflate(R.layout.fragment_level2, container, false);
-        buttonTrue = (Button)mRootView.findViewById(R.id.buttonFalse5);
+        View mRootView = inflater.inflate(R.layout.fragment_level10, container, false);
+        buttonTrue = (Button)mRootView.findViewById(R.id.buttonTrue);
         buttonFalse2 = (Button)mRootView.findViewById(R.id.buttonFalse2);
         buttonFalse3 = (Button)mRootView.findViewById(R.id.buttonFalse3);
         buttonFalse4 = (Button)mRootView.findViewById(R.id.buttonFalse4);
+        buttonFalse5 = (Button)mRootView.findViewById(R.id.buttonFalse5);
+        buttonFalse6 = (Button)mRootView.findViewById(R.id.buttonFalse6);
         buttonTrue.setOnClickListener(this);
         buttonFalse2.setOnClickListener(this);
         buttonFalse3.setOnClickListener(this);
         buttonFalse4.setOnClickListener(this);
-        tvLevel=(TextView)mRootView.findViewById(R.id.tvLevel);
+        buttonFalse5.setOnClickListener(this);
+        buttonFalse6.setOnClickListener(this);
+
         tvStrikes=(TextView)mRootView.findViewById(R.id.tvStrikes);
-        tvLevel.setText(""+((GameActivity)getContext()).getLevel());
         tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
         return mRootView;
     }
@@ -40,12 +44,12 @@ public class FragmentLevel2 extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.buttonFalse5:
+            case R.id.buttonTrue:
                 ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel3()).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel11()).commit();
                 break;
             case R.id.buttonFalse2:
-                ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
+                ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));
                 tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 break;
             case R.id.buttonFalse3:
@@ -53,8 +57,22 @@ public class FragmentLevel2 extends Fragment implements View.OnClickListener{
                 tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 break;
             case R.id.buttonFalse4:
+
                 ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));
                 tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+
+                break;
+            case R.id.buttonFalse5:
+
+                ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+
+                break;
+            case R.id.buttonFalse6:
+
+                ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+
                 break;
         }
     }

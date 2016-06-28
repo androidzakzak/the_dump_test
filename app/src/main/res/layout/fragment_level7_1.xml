@@ -3,6 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:layout_width="19dp"
+        android:layout_height="13dp"
+        android:text="New Button"
+        android:id="@+id/button5" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
