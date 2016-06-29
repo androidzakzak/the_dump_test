@@ -23,11 +23,11 @@ public class FragmentLevel4 extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View mRootView = inflater.inflate(R.layout.fragment_level4, container, false);
         buttonTrue=(ImageView)mRootView.findViewById(R.id.buttonFalse5);
-        buttonTrue.setOnClickListener(this);
-        Animation anim = new MyAnimation(buttonTrue, 150);
+        Animation anim = new MyAnimation(buttonTrue,250);
         anim.setRepeatCount(Animation.INFINITE);
-        anim.setDuration(700);
+        anim.setDuration(5000);
         buttonTrue.startAnimation(anim);
+        buttonTrue.setOnClickListener(this);
         tvLevel=(TextView)mRootView.findViewById(R.id.tvLevel);
         tvStrikes=(TextView)mRootView.findViewById(R.id.tvStrikes);
         tvLevel.setText(""+((GameActivity)getContext()).getLevel());

@@ -3,6 +3,7 @@ package com.dinogameandroid.thedumbtest.levels;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,10 +17,12 @@ import com.dinogameandroid.thedumbtest.activity.GameActivity;
 public class FragmentLevel7_1 extends Fragment implements View.OnClickListener{
 int count=1;
     ImageView imageButton;
+    TextView tvStrikes;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View mRootView = inflater.inflate(R.layout.fragment_level7_1, container, false);
         imageButton = (ImageView) mRootView.findViewById(R.id.imageButton);
+        tvStrikes=(TextView)mRootView.findViewById(R.id.tvStrikes);
         ImageView imageButton3 = (ImageView) mRootView.findViewById(R.id.imageButton3);
         ImageView imageButton4 = (ImageView) mRootView.findViewById(R.id.imageButton4);
         ImageView imageButton7 = (ImageView) mRootView.findViewById(R.id.imageButton7);
@@ -44,7 +47,6 @@ int count=1;
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button5:
-
                 ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel8()).commit();
                 break;
@@ -52,63 +54,73 @@ int count=1;
                 if(count==1 || count==3 || count==4){
                     count++;
                 }else {
-                    ((GameActivity)getActivity()).onClickError(imageButton);
+                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 }
                 break;
             case R.id.imageButton3:
-                if(count==4){
+                if(count==5){
                     count++;
                     ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel8()).commit();
                 }else {
-                    ((GameActivity)getActivity()).onClickError(imageButton);
+                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 }
                 break;
             case R.id.imageButton4:
                 if(count==2){
                     count++;
                 }else {
-                    ((GameActivity)getActivity()).onClickError(imageButton);
+                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 }
                 break;
             case R.id.imageButton7:
                 if(count==2){
                     count++;
                 }else {
-                    ((GameActivity)getActivity()).onClickError(imageButton);
+                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 }
                 break;
             case R.id.imageButton13:
-                if(count==4){
+                if(count==5){
                     count++;
                     ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel8()).commit();
                 }else {
-                    ((GameActivity)getActivity()).onClickError(imageButton);
+                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 }
                 break;
             case R.id.imageButton15:
                 if(count==1 || count==3 || count==4){
                     count++;
                 }else {
-                    ((GameActivity)getActivity()).onClickError(imageButton);
+                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 }
                 break;
             case R.id.imageButton16:
                 if(count==2){
                     count++;
                 }else {
-                    ((GameActivity)getActivity()).onClickError(imageButton);
+                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 }
                 break;
             case R.id.imageButton18:
                 if(count==1 || count==3 || count==4){
                     count++;
                 }else {
-                    ((GameActivity)getActivity()).onClickError(imageButton);
+                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 }
                 break;
+
         }
+        Log.e("click",""+count);
     }
 
 
