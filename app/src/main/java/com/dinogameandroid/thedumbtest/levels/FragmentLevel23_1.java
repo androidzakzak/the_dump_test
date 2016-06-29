@@ -37,7 +37,7 @@ public class FragmentLevel23_1 extends Fragment implements View.OnClickListener{
         switch (v.getId()){
             case R.id.buttonTrue:
                 ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel15()).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel23_2()).commit();
                 break;
             case R.id.buttonFalse:
                 ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
