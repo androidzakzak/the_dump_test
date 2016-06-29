@@ -28,4 +28,72 @@
         android:layout_alignStart="@+id/tvLevel"
         android:layout_marginBottom="23dp" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redTriagle"
+        android:layout_below="@+id/tvLevel"
+        android:layout_alignLeft="@+id/tvLevel"
+        android:layout_alignStart="@+id/tvLevel"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/triagle2" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/redCircle"
+        android:background="@drawable/red_circle"
+        android:layout_alignTop="@+id/yellowCircle"
+        android:layout_alignLeft="@+id/redTriagle"
+        android:layout_alignStart="@+id/redTriagle" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yellowSquare"
+        android:background="@drawable/squre_yellow"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignBottom="@+id/blueTriagle"
+        android:layout_toRightOf="@+id/redCircle"
+        android:layout_toEndOf="@+id/redCircle" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/yellowCircle"
+        android:background="@drawable/yelow_circle"
+        android:layout_above="@+id/tvStrikes"
+        android:layout_alignLeft="@+id/yellowSquare"
+        android:layout_alignStart="@+id/yellowSquare" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blueTriagle"
+        android:background="@drawable/triagle1"
+        android:layout_below="@+id/tvLevel"
+        android:layout_toRightOf="@+id/yellowSquare"
+        android:layout_toEndOf="@+id/yellowSquare"
+        android:layout_marginLeft="87dp"
+        android:layout_marginStart="87dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redSquare"
+        android:background="@drawable/squre_red"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/blueCircle"
+        android:background="@drawable/blue_circle1"
+        android:layout_alignBottom="@+id/redCircle"
+        android:layout_alignLeft="@+id/blueTriagle"
+        android:layout_alignStart="@+id/blueTriagle" />
+
 </RelativeLayout>
