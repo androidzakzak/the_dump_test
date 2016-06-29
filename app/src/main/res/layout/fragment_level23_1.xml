@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tvLevel"
+        android:layout_marginTop="15dp"
+        android:textColor="#050000"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strikes:"
+        android:id="@+id/tvStrikes"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:textColor="#050000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dis too"
+        android:id="@+id/textView25"
+        android:layout_alignTop="@+id/tvLevel"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Red x3"
+        android:id="@+id/textView26"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0af806" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Blue x2"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView26"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26"
+        android:textColor="#f3ef08" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Green x1"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/textView27"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f20b0b" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Yellow x1"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView28"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0d7ff1" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Challeng accepted!"
+        android:id="@+id/buttonTrue"
+        android:layout_below="@+id/textView30"
+        android:layout_toLeftOf="@+id/textView29"
+        android:layout_toStartOf="@+id/textView29" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="53dp"
+        android:text="No"
+        android:id="@+id/buttonFalse"
+        android:layout_alignBottom="@+id/buttonTrue"
+        android:layout_toRightOf="@+id/textView29"
+        android:layout_toEndOf="@+id/textView29" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="24"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/textView29"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

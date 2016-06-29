@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tvLevel"
+        android:layout_marginTop="15dp"
+        android:textColor="#050000"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strikes:"
+        android:id="@+id/tvStrikes"
+        android:textColor="#050000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/tvLevel"
+        android:layout_alignStart="@+id/tvLevel"
+        android:layout_marginBottom="23dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRed"
+        android:background="@drawable/red_circle"
+        android:layout_below="@+id/tvLevel"
+        android:layout_alignLeft="@+id/tvLevel"
+        android:layout_alignStart="@+id/tvLevel"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBlue"
+        android:background="@drawable/blue_circle1"
+        android:layout_below="@+id/buttonRed"
+        android:layout_toRightOf="@+id/buttonRed"
+        android:layout_toEndOf="@+id/buttonRed" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonYellow"
+        android:background="@drawable/yelow_circle"
+        android:layout_above="@+id/buttonBlue"
+        android:layout_toRightOf="@+id/buttonBlue"
+        android:layout_toEndOf="@+id/buttonBlue" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGreen"
+        android:background="@drawable/green_circle"
+        android:layout_below="@+id/buttonYellow"
+        android:layout_toRightOf="@+id/buttonYellow"
+        android:layout_toEndOf="@+id/buttonYellow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="24"
+        android:id="@+id/button24"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="80sp" />
+</RelativeLayout>

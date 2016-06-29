@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tvLevel"
+        android:layout_marginTop="15dp"
+        android:textColor="#050000"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strikes:"
+        android:id="@+id/tvStrikes"
+        android:textColor="#050000"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/tvLevel"
+        android:layout_alignStart="@+id/tvLevel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What number was used \n the most on this test?"
+        android:id="@+id/textView21"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/tvLevel"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="8"
+        android:id="@+id/buttonFalse9"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView21"
+        android:layout_toRightOf="@+id/tvLevel"
+        android:layout_toEndOf="@+id/tvLevel"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="5"
+        android:id="@+id/buttonFalse8"
+        android:textSize="18sp"
+        android:layout_below="@+id/buttonFalse9"
+        android:layout_toRightOf="@+id/buttonFalse9"
+        android:layout_toEndOf="@+id/buttonFalse9" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="42"
+        android:id="@+id/buttonFalse7"
+        android:textSize="18sp"
+        android:layout_below="@+id/buttonFalse8"
+        android:layout_toRightOf="@+id/buttonFalse8"
+        android:layout_toEndOf="@+id/buttonFalse8" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="28"
+        android:id="@+id/buttonFalse6"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/buttonFalse9"
+        android:layout_toRightOf="@+id/buttonFalse7"
+        android:layout_toEndOf="@+id/buttonFalse7" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="8"
+        android:id="@+id/buttonFalse5"
+        android:textSize="18sp"
+        android:layout_below="@+id/buttonFalse8"
+        android:layout_toRightOf="@+id/buttonFalse6"
+        android:layout_toEndOf="@+id/buttonFalse6" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="68"
+        android:id="@+id/buttonFalse4"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/buttonFalse5"
+        android:layout_toEndOf="@+id/buttonFalse5" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="3"
+        android:id="@+id/buttonFalse3"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/buttonFalse6"
+        android:layout_toRightOf="@+id/buttonFalse4"
+        android:layout_toEndOf="@+id/buttonFalse4"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="1"
+        android:id="@+id/buttonFalse2"
+        android:textSize="18sp"
+        android:layout_below="@+id/buttonFalse4"
+        android:layout_toRightOf="@+id/buttonFalse3"
+        android:layout_toEndOf="@+id/buttonFalse3" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="24"
+        android:id="@+id/buttonTrue"
+        android:textSize="18sp"
+        android:layout_above="@+id/tvStrikes"
+        android:layout_toRightOf="@+id/buttonFalse2"
+        android:layout_toEndOf="@+id/buttonFalse2" />
+</RelativeLayout>
