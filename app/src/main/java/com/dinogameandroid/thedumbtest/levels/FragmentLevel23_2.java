@@ -1,7 +1,9 @@
 package com.dinogameandroid.thedumbtest.levels;
 
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,7 +26,7 @@ public class FragmentLevel23_2 extends Fragment implements View.OnClickListener{
     private ImageView redSquare;
     private ImageView blueCircle;
     int count;
-
+    Vibrator vibe1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -56,6 +58,8 @@ public class FragmentLevel23_2 extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.redTriagle:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
 if(count==0){
     count++;
 }
@@ -65,6 +69,8 @@ if(count==0){
                 }
                 break;
             case R.id.redCircle:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 if(count==5 ){
                     count++;
                 }
@@ -74,10 +80,14 @@ if(count==0){
                 }
                 break;
             case R.id.yellowSquare:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));
                 tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 break;
             case R.id.yellowCircle:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 if(count==6){
                     count++;
                     tvLevel.setText("24");
@@ -88,6 +98,8 @@ if(count==0){
                 }
                 break;
             case R.id.blueTriagle:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 if(count==3 || count == 4){
                     count++;
                 }
@@ -97,6 +109,8 @@ if(count==0){
                 }
                 break;
             case R.id.redSquare:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
 if(count==1 || count == 2){
     count++;
 }
@@ -106,13 +120,17 @@ else {
 }
                 break;
             case R.id.blueCircle:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));
                 tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
                 break;
             case R.id.tvLevel:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 if(count==7){
-                    ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
-                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel19()).commit();
+                    ((GameActivity) getActivity()).finaly();
+
                 }
                 else{
                     ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));

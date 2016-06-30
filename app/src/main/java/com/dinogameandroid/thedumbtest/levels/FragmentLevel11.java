@@ -1,7 +1,9 @@
 package com.dinogameandroid.thedumbtest.levels;
 
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +23,7 @@ public class FragmentLevel11 extends Fragment implements View.OnClickListener{
     private TextView textView12;
     boolean one;
     boolean two;
+    Vibrator vibe1;
     int count;
 
     @Override
@@ -44,7 +47,9 @@ public class FragmentLevel11 extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.buttonFalse4:
+            case R.id.buttonFalse4: vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+
                 if(count==12){
                     if(one){
                         ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));
@@ -75,12 +80,16 @@ buttonTrue.setImageDrawable(getResources().getDrawable(R.drawable.blue_circle1))
                 }
                 break;
             case R.id.buttonTrue1:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 buttonTrue1.setVisibility(View.INVISIBLE);
                 count++;
                 textView12.setText("" + count);
                 buttonTrue.setImageDrawable(getResources().getDrawable(R.drawable.green_circle));
                 break;
             case R.id.buttonTrue3:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 buttonTrue3.setVisibility(View.INVISIBLE);
                 count++;
                 textView12.setText("" + count);

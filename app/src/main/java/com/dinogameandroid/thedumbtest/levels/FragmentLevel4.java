@@ -1,7 +1,9 @@
 package com.dinogameandroid.thedumbtest.levels;
 
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +20,7 @@ public class FragmentLevel4 extends Fragment implements View.OnClickListener{
     private TextView tvLevel;
     private TextView tvStrikes;
     private ImageView buttonTrue;
+    Vibrator vibe1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -39,6 +42,8 @@ public class FragmentLevel4 extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.buttonFalse5:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel5()).commit();
                 break;

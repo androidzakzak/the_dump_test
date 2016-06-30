@@ -1,6 +1,8 @@
 package com.dinogameandroid.thedumbtest.levels;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,6 +42,7 @@ public class FragmentLevel5_1 extends Fragment implements View.OnClickListener{
     private boolean two;
     private boolean three;
     private boolean who;
+    Vibrator vibe1;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View mRootView = inflater.inflate(R.layout.fragment_level5_1, container, false);
@@ -94,6 +97,8 @@ public class FragmentLevel5_1 extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.buttonFalse5:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 if(one&&two&&three&&who) {
                     ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment, new FragmentLevel6()).commit();
@@ -104,67 +109,100 @@ public class FragmentLevel5_1 extends Fragment implements View.OnClickListener{
                 }
                 break;
             case R.id.imageView5:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 one=false;
 button.setBackground(getResources().getDrawable(R.drawable.red_circle));
                 break;
             case R.id.imageView6:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 one=false;
                 button.setBackground(getResources().getDrawable(R.drawable.green_circle));
                 break;
             case R.id.imageView7:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 one=false;
                 button.setBackground(getResources().getDrawable(R.drawable.yelow_circle));
                 break;
             case R.id.imageView8:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 one=true;
                 button.setBackground(getResources().getDrawable(R.drawable.blue_circle1));
                 break;
             case R.id.imageView9:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 two=false;
                 button2.setBackground(getResources().getDrawable(R.drawable.red_circle));
                 break;
             case R.id.imageView10:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 two=false;
                 button2.setBackground(getResources().getDrawable(R.drawable.green_circle));
                 break;
             case R.id.imageView11:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 two=true;
                 button2.setBackground(getResources().getDrawable(R.drawable.yelow_circle));
                 break;
             case R.id.imageView12:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 two=false;
                 button2.setBackground(getResources().getDrawable(R.drawable.blue_circle1));
                 break;
             case R.id.imageView1:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+
                 three=false;
                 button3.setBackground(getResources().getDrawable(R.drawable.red_circle));
                 break;
             case R.id.imageView2:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 three=true;
                 button3.setBackground(getResources().getDrawable(R.drawable.green_circle));
                 break;
             case R.id.imageView3:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 three=false;
                 button3.setBackground(getResources().getDrawable(R.drawable.yelow_circle));
                 break;
             case R.id.imageView4:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 three=false;
                 button3.setBackground(getResources().getDrawable(R.drawable.blue_circle1));
                 break;
             case R.id.imageView13:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 who=true;
                 button4.setBackground(getResources().getDrawable(R.drawable.red_circle));
                 break;
             case R.id.imageView14:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 who=false;
 
                 button4.setBackground(getResources().getDrawable(R.drawable.green_circle));
                 break;
             case R.id.imageView15:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 who=false;
                 button4.setBackground(getResources().getDrawable(R.drawable.yelow_circle));
                 break;
             case R.id.imageView16:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 who=false;
                 button4.setBackground(getResources().getDrawable(R.drawable.blue_circle1));
                 break;

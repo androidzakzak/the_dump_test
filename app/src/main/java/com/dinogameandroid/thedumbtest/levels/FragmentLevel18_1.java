@@ -1,6 +1,8 @@
 package com.dinogameandroid.thedumbtest.levels;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +23,7 @@ public class FragmentLevel18_1 extends Fragment implements View.OnClickListener{
     private ImageView buttonGreen;
     private ImageView buttonYellow;
     private TextView button24;
+    Vibrator vibe1;
     int count;
 
 
@@ -48,6 +51,9 @@ public class FragmentLevel18_1 extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.buttonRed:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+
                 if(count==1 || count==2 || count==0){
                     count++;
                 }
@@ -58,6 +64,8 @@ public class FragmentLevel18_1 extends Fragment implements View.OnClickListener{
 
                 break;
             case R.id.buttonBlue:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
 if(count==3){
     buttonBlue.setBackground(getResources().getDrawable(R.drawable.green_circle));
     buttonGreen.setBackground(getResources().getDrawable(R.drawable.blue_circle1));
@@ -70,7 +78,8 @@ if(count==3){
 
                 break;
             case R.id.buttonGreen:
-
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
 
 
                 if(count==3){
@@ -88,6 +97,8 @@ if(count==3){
 
                 break;
             case R.id.buttonYellow:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 if(count==5){
                     count++;
                 }
@@ -98,6 +109,8 @@ if(count==3){
 
                 break;
             case R.id.button24:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
                 if(count==6){
                     ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel19()).commit();

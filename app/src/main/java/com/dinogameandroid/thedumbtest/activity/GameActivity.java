@@ -46,6 +46,11 @@ public class GameActivity extends AppCompatActivity {
             finish();
         }
     }
+    public void finaly(){
+        Intent intent=new Intent(this,FinalActivity.class);
+        startActivity(intent);
+        mStrikes=0;
+    }
     public void onClickError(View v) {
        setStrikes(getStrikes() + 1);
     }
