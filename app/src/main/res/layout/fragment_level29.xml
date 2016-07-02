@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tvLevel"
+        android:layout_marginTop="15dp"
+        android:textColor="#050000"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strikes:"
+        android:id="@+id/tvStrikes"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:textColor="#050000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Touch the circles from largest to smallest"
+        android:id="@+id/tvText"
+        android:layout_alignTop="@+id/tvLevel"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/buttonTrue1"
+        android:background="@drawable/blue_circle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/buttonTrue2"
+        android:background="@drawable/blue_circle"
+        android:layout_above="@+id/buttonTrue3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/buttonTrue3"
+        android:background="@drawable/blue_circle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/buttonTrue2"
+        android:layout_alignStart="@+id/buttonTrue2" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/buttonTrue4"
+        android:background="@drawable/blue_circle"
+        android:layout_alignTop="@+id/buttonTrue2"
+        android:layout_toRightOf="@+id/tvStrikes"
+        android:layout_toEndOf="@+id/tvStrikes" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/buttonTrue5"
+        android:background="@drawable/blue_circle"
+        android:layout_below="@+id/buttonTrue2"
+        android:layout_alignLeft="@+id/tvText"
+        android:layout_alignStart="@+id/tvText" />
+
+</RelativeLayout>

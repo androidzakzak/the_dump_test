@@ -32,19 +32,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="CATCH ME!"
-        android:id="@+id/textView5"
-        android:textSize="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:text="Tap the inverted circle"
+        android:id="@+id/textView35"
+        android:layout_alignTop="@+id/tvLevel"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
 
     <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:id="@+id/buttonFalse5"
-        android:fillEnabled="true"
-        android:layout_centerInParent="true"
-        android:src="@drawable/blue_circle"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFalse"
+        android:background="@drawable/green_circle"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_toLeftOf="@+id/textView35"
+        android:layout_toStartOf="@+id/textView35" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonTrue"
+        android:background="@drawable/green_circle"
+        android:layout_alignTop="@+id/buttonFalse"
+        android:layout_toRightOf="@+id/textView35"
+        android:layout_toEndOf="@+id/textView35" />
+
 </RelativeLayout>

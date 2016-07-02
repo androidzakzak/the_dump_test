@@ -1,5 +1,6 @@
 package com.dinogameandroid.thedumbtest.levels;
 
+
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -13,7 +14,7 @@ import android.widget.TextView;
 import com.dinogameandroid.thedumbtest.R;
 import com.dinogameandroid.thedumbtest.activity.GameActivity;
 
-public class FragmentLevel28 extends Fragment implements View.OnClickListener{
+public class FragmentLevel29 extends Fragment implements View.OnClickListener{
     private TextView tvLevel;
     private TextView tvStrikes;
     private ImageView buttonTrue1;
@@ -26,7 +27,7 @@ public class FragmentLevel28 extends Fragment implements View.OnClickListener{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View mRootView = inflater.inflate(R.layout.fragment_level28, container, false);
+        View mRootView = inflater.inflate(R.layout.fragment_level29, container, false);
         buttonTrue1 = (ImageView)mRootView.findViewById(R.id.buttonTrue1);
         buttonTrue2 = (ImageView)mRootView.findViewById(R.id.buttonTrue2);
         buttonTrue3 = (ImageView)mRootView.findViewById(R.id.buttonTrue3);
@@ -51,14 +52,14 @@ public class FragmentLevel28 extends Fragment implements View.OnClickListener{
             case R.id.buttonTrue1:
                 vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
                 vibe1.vibrate(20);
-   if(count==0){
-       count++;
-       buttonTrue1.setVisibility(View.INVISIBLE);
-   }
+                if(count==0){
+                    count++;
+                    buttonTrue1.setVisibility(View.INVISIBLE);
+                }
                 else{
-       ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));
-       tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
-   }
+                    ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                }
                 break;
             case R.id.buttonTrue2:
                 vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
@@ -103,7 +104,7 @@ public class FragmentLevel28 extends Fragment implements View.OnClickListener{
                 if(count==4){
                     buttonTrue5.setVisibility(View.INVISIBLE);
                     ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
-                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel29()).commit();
+                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel30()).commit();
                 }
                 else{
                     ((GameActivity) getActivity()).setStrikes( (((GameActivity) getActivity()).getStrikes()+1));
@@ -114,3 +115,4 @@ public class FragmentLevel28 extends Fragment implements View.OnClickListener{
         }
     }
 }
+

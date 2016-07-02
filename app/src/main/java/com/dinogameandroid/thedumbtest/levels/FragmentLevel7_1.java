@@ -33,8 +33,7 @@ int count=1;
         ImageView imageButton15 = (ImageView) mRootView.findViewById(R.id.imageButton15);
         ImageView imageButton16 = (ImageView) mRootView.findViewById(R.id.imageButton16);
         ImageView imageButton18 = (ImageView) mRootView.findViewById(R.id.imageButton18);
-        Button button5 = (Button)mRootView.findViewById(R.id.button5);
-        button5.setOnClickListener(this);
+        tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
         imageButton.setOnClickListener(this);
         imageButton3.setOnClickListener(this);
         imageButton4.setOnClickListener(this);
@@ -49,20 +48,14 @@ int count=1;
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.button5:
-                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
-                vibe1.vibrate(20);
-                ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel8()).commit();
-                break;
             case R.id.imageButton:
                 vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
                 vibe1.vibrate(20);
                 if(count==1 || count==3 || count==4){
                     count++;
                 }else {
-                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
-                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+                    ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
                 }
                 break;
             case R.id.imageButton3:
@@ -73,8 +66,8 @@ int count=1;
                     ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel8()).commit();
                 }else {
-                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
-                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+                    ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
                 }
                 break;
             case R.id.imageButton4:
@@ -83,8 +76,8 @@ int count=1;
                 if(count==2){
                     count++;
                 }else {
-                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
-                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+                    ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
                 }
                 break;
             case R.id.imageButton7:
@@ -93,8 +86,8 @@ int count=1;
                 if(count==2){
                     count++;
                 }else {
-                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
-                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+                    ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
                 }
                 break;
             case R.id.imageButton13:
@@ -106,8 +99,8 @@ int count=1;
                     ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel8()).commit();
                 }else {
-                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
-                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+                    ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
                 }
                 break;
             case R.id.imageButton15:
@@ -116,8 +109,8 @@ int count=1;
                 if(count==1 || count==3 || count==4){
                     count++;
                 }else {
-                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
-                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+                    ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
                 }
                 break;
             case R.id.imageButton16:
@@ -126,8 +119,8 @@ int count=1;
                 if(count==2){
                     count++;
                 }else {
-                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
-                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+                    ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
                 }
                 break;
             case R.id.imageButton18:
@@ -136,8 +129,8 @@ int count=1;
                 if(count==1 || count==3 || count==4){
                     count++;
                 }else {
-                    ((GameActivity) getActivity()).setStrikes((((GameActivity) getActivity()).getStrikes() + 1));
-                    tvStrikes.setText("Strikes:" + ((GameActivity) getActivity()).getStrikes());
+                    ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                    tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
                 }
                 break;
 
