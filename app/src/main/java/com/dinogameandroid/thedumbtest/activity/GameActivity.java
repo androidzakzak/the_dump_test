@@ -51,7 +51,10 @@ public class GameActivity extends AppCompatActivity {
         startActivity(intent);
         mStrikes=0;
     }
-    public void onClickError(View v) {
-       setStrikes(getStrikes() + 1);
+
+    @Override
+    public void onBackPressed() {
+        mStrikes=0;
+        super.onBackPressed();
     }
 }

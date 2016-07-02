@@ -68,7 +68,7 @@ buttonTrue.setImageDrawable(getResources().getDrawable(R.drawable.blue_circle1))
                     buttonTrue3.setVisibility(View.VISIBLE);
                     two=true;
                 }
-                else if(count==25){
+                else if(count==24){
                     ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel12()).commit();
                 }

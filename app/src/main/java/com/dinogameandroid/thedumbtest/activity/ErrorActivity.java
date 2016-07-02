@@ -15,15 +15,13 @@ private Button btnBackMenu;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_error);
         btnBackMenu=(Button)findViewById(R.id.btnBackMenu);
-
+        btnBackMenu.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnBackMenu:
-                Intent intent=new Intent(this,MainActivity.class);
-                startActivity(intent);
                 finish();
                 break;
         }

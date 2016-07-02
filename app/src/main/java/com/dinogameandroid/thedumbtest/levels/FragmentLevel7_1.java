@@ -26,12 +26,23 @@ int count=1;
         View mRootView = inflater.inflate(R.layout.fragment_level7_1, container, false);
         imageButton = (ImageView) mRootView.findViewById(R.id.imageButton);
         tvStrikes=(TextView)mRootView.findViewById(R.id.tvStrikes);
+        ImageView imageButton = (ImageView) mRootView.findViewById(R.id.imageButton);
+        ImageView imageButton2 = (ImageView) mRootView.findViewById(R.id.imageButton2);
         ImageView imageButton3 = (ImageView) mRootView.findViewById(R.id.imageButton3);
         ImageView imageButton4 = (ImageView) mRootView.findViewById(R.id.imageButton4);
+        ImageView imageButton5 = (ImageView) mRootView.findViewById(R.id.imageButton5);
+        ImageView imageButton6 = (ImageView) mRootView.findViewById(R.id.imageButton6);
         ImageView imageButton7 = (ImageView) mRootView.findViewById(R.id.imageButton7);
+        ImageView imageButton8 = (ImageView) mRootView.findViewById(R.id.imageButton8);
+        ImageView imageButton9 = (ImageView) mRootView.findViewById(R.id.imageButton9);
+        ImageView imageButton10 = (ImageView) mRootView.findViewById(R.id.imageButton10);
+        ImageView imageButton11 = (ImageView) mRootView.findViewById(R.id.imageButton11);
+        ImageView imageButton12 = (ImageView) mRootView.findViewById(R.id.imageButton12);
         ImageView imageButton13 = (ImageView) mRootView.findViewById(R.id.imageButton13);
+        ImageView imageButton14 = (ImageView) mRootView.findViewById(R.id.imageButton14);
         ImageView imageButton15 = (ImageView) mRootView.findViewById(R.id.imageButton15);
         ImageView imageButton16 = (ImageView) mRootView.findViewById(R.id.imageButton16);
+        ImageView imageButton17 = (ImageView) mRootView.findViewById(R.id.imageButton17);
         ImageView imageButton18 = (ImageView) mRootView.findViewById(R.id.imageButton18);
         tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
         imageButton.setOnClickListener(this);
@@ -42,12 +53,83 @@ int count=1;
         imageButton15.setOnClickListener(this);
         imageButton16.setOnClickListener(this);
         imageButton18.setOnClickListener(this);
+
+        imageButton2.setOnClickListener(this);
+        imageButton5.setOnClickListener(this);
+        imageButton6.setOnClickListener(this);
+        imageButton8.setOnClickListener(this);
+        imageButton9.setOnClickListener(this);
+        imageButton10.setOnClickListener(this);
+        imageButton11.setOnClickListener(this);
+        imageButton12.setOnClickListener(this);
+        imageButton14.setOnClickListener(this);
+        imageButton17.setOnClickListener(this);
         return mRootView;
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.imageButton2:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+                ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                break;
+            case R.id.imageButton5:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+                ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                break;
+            case R.id.imageButton6:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+                ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                break;
+            case R.id.imageButton8:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+                ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                break;
+            case R.id.imageButton9:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+                ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                break;
+            case R.id.imageButton10:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+                ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                break;
+            case R.id.imageButton11:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+                ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                break;
+            case R.id.imageButton12:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+                ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                break;
+            case R.id.imageButton14:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+                ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                break;
+            case R.id.imageButton17:
+                vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+                vibe1.vibrate(20);
+                ((GameActivity) getContext()).setStrikes( (((GameActivity) getContext()).getStrikes()+1));
+                tvStrikes.setText("Strikes:" + ((GameActivity) getContext()).getStrikes());
+                break;
             case R.id.imageButton:
                 vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
                 vibe1.vibrate(20);
