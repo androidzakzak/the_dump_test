@@ -44,7 +44,7 @@ public class FragmentLevel31 extends Fragment implements View.OnClickListener{
                 vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
                 vibe1.vibrate(20);
                 ((GameActivity) getActivity()).setLevel(((GameActivity) getActivity()).getLevel() + 1);
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel23()).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentLevel32()).commit();
                 break;
             case R.id.buttonFalse:
                 vibe1 = (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
